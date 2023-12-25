@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React/static/css/main.073c9b0a.css",
-    "main.js": "/React/static/js/main.168cb756.js",
-    "static/js/787.60235f71.chunk.js": "/React/static/js/787.60235f71.chunk.js",
-    "index.html": "/React/index.html",
-    "main.073c9b0a.css.map": "/React/static/css/main.073c9b0a.css.map",
-    "main.168cb756.js.map": "/React/static/js/main.168cb756.js.map",
-    "787.60235f71.chunk.js.map": "/React/static/js/787.60235f71.chunk.js.map"
+    "main.css": "/Tobi-Bymistake/React.git/static/css/main.073c9b0a.css",
+    "main.js": "/Tobi-Bymistake/React.git/static/js/main.c091daf7.js",
+    "static/js/787.60235f71.chunk.js": "/Tobi-Bymistake/React.git/static/js/787.60235f71.chunk.js",
+    "index.html": "/Tobi-Bymistake/React.git/index.html",
+    "main.073c9b0a.css.map": "/Tobi-Bymistake/React.git/static/css/main.073c9b0a.css.map",
+    "main.c091daf7.js.map": "/Tobi-Bymistake/React.git/static/js/main.c091daf7.js.map",
+    "787.60235f71.chunk.js.map": "/Tobi-Bymistake/React.git/static/js/787.60235f71.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.168cb756.js"
+    "static/js/main.c091daf7.js"
   ]
 }
