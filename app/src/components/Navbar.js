@@ -24,9 +24,9 @@ export default function Navbar(props) {
           </li>
         
           <li className="nav-item">
-          {/* <a className="nav-link" href="/">{props.aboutText}</a>  */}
-          <Link className="nav-link" to="/about">{props.aboutText}</Link>
-          </li>
+           {/* <a className="nav-link" href="/">{props.aboutText}</a>   */}
+          <Link className="nav-link" to="/about">{props.aboutText}</Link> 
+            </li> 
       
         </ul>
        

@@ -1,55 +1,62 @@
-import React, {useState} from 'react';
+import React from 'react'
 
-export default function About()  {
+export default function About(props) {
+
+    // const [myStyle, setMyStyle] = useState({
+    //     color: 'black',
+    //     backgroundColor: 'white'
+    // }) 
+    let myStyle = {
+        color: props.mode ==='dark'?'white':'#042743',
+        backgroundColor: props.mode ==='dark'?'rgb(36 74 104)':'white', 
+        // border:'2px solid',
+        // borderColour: props.mode ==='dark'?'white':'#042743'
+      }
     
-    const [myStyle, setMyStyle ] = useState({                    //style, is our current state. 
-                                                                 //  setMyStyler, is the function that is used to update our state.
-        color:'black',                                           //useState("  ")= whatever we write in this useState it is our current state like if their is style present then it will black or white 
-        backgroundColor:'white'                                     //another ex. if const [mycolour, setMyColour ] = useState("Red")
-    })
+    return (
+        <div className="container">
+            <h1 className="my-3" style={{color: props.mode ==='dark'?'white':'#042743'}}>About Us</h1>
+            <div className="accordion" id="accordionExample">
+                <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
+                    <button className="accordion-button" type="button" style={myStyle} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Analyze Your text </strong>
+                    </button>
+                    </h2>
+                    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div className="accordion-body" style={myStyle}>
+                    Textutils gives you a way to analyze your text quickly and efficiently. Be it word count, character count or 
 
+                    </div>
+                    </div>
+                </div>
+                <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingTwo">
+                    <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Free to use </strong>
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div className="accordion-body" style={myStyle}>
+                    TextUtils is a free character counter tool that provides instant character count & word count statistics for a given text. TextUtils reports the number of words and characters. Thus it is suitable for writing text with word/ character limit.
+                    </div>
+                    </div>
+                </div>
+                <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingThree">
+                    <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Browser Compatible </strong>
+                    </button>
+                    </h2>
+                    <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div className="accordion-body" style={myStyle}>
+                    This word counter software works in any web browsers such as Chrome, Firefox, Internet Explorer, Safari, Opera. It suits to count characters in facebook, blog, books, excel document, pdf document, essays, etc.
 
-    const [btntext, setBtnText] = useState("Enable dark mode")
- const toggleStyle = () => {
-    if(myStyle.color === 'black'){
-        setMyStyle({
-            color:'white',
-            backgroundColor:'black',
-            border : '1px solid white'
-        })
-        setBtnText("Enable light mode")
-    }
-    else{
-        setMyStyle({
-            color:'black',
-            backgroundColor:'white'
-        })
-        setBtnText("Enable dark mode");
-    }
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    )
 }
-
-  return (
-    <div className="container" style={myStyle}>
-        <h1 className='my-3'>Hemlo bro</h1>
-      <h2>About Us</h2>
-      <p>
-        Welcome to our website! We are a team of passionate individuals dedicated to providing
-        high-quality products/services.
-      </p>
-      <p>
-        Our mission is to make a positive impact on the world by delivering innovative solutions
-        and exceptional experiences.
-      </p>
-      <p>
-        Feel free to explore our website and learn more about what we do. If you have any
-        questions, don't hesitate to contact us.
-      </p>
-      <div className='container my-3'>
-      <button onClick={toggleStyle} type="button" className="btn btn-primary">{btntext}</button>
-      </div>
-    </div>
-  )
-}
-
-
-
